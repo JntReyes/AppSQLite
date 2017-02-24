@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_message">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_message"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_message"
+            android:layout_toRightOf="@id/iv_message"
+            android:textSize="15pt"
+            android:text="Messages"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_messages"
+            android:layout_toRightOf="@id/iv_message"
+            android:layout_below="@+id/tv_message"
+            android:text="Message"
+            android:textSize="10pt"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_edit_message"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_delete_message"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_below="@+id/bt_edit_message"
+            android:layout_alignLeft="@+id/bt_edit_message"
+            android:layout_alignStart="@+id/bt_edit_message" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_message_ip"
+            android:text="ip message"
+            android:textSize="10pt"
+            android:layout_below="@+id/tv_messages"
+            android:layout_toRightOf="@+id/iv_message"
+            android:layout_toEndOf="@+id/iv_message" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
